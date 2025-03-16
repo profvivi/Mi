@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeApp</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="abelha-64px.png" alt="logo equipe">
+        </div>
+        <div class="texto">
+            <h2>Jornada Interativa de Aprendizagem</h2>
+        </div>
+
+    </header>
+    
+    <h1>Cadastro</h1>
+    
+    <section>
+        <form action="">
+           
+            <label form="nome">Nome:</label> 
+            <input type="text" name="nome" id="idnome" class="input">
+        
+            <!--<fieldset>
+                <legend>Idade</legend>
+                <select class="input">
+                    <option></option>
+                    <option>Idade(10 á 14 anos)</option>
+                    <option>Idade(15 á 18 anos)</option>
+                    <option>Idade(19 á 21 anos)</option>
+                </select>
+            </fieldset>-->
+
+            <label form="idade">Idade:</label>
+            <input type="number" name="idade" id="ididade" class="input" required>
+        
+            <label form="tuma">Nº da Turma:</label>
+            <input type="number" name="turma" id="idturma" class="input" > 
+
+            <label form="usuario">Usuário:</label>
+            <input type="text" name="us" id="idusuario" class="input"> 
+
+            <label form="senha">Senha:</label>
+            <input type="password" name="sen" id="idsenha" class="input"> 
+
+            <label form="email">E-mail:</label>
+            <input type="email" name="email" id="idemail" class="input" margin="30px 0" required placeholder="seuemail@dominio.com"> 
+
+            <input type="submit" value="Salvar" onclick="salvar()" class="button"> 
+            <input type="reset" value="Limpar" onclick="Limpar()" class="button"> 
+
+            <!--<input type="submit" value="Enviar formulário" onclick="enviar()" class="button"-->
+            
+        </form>
+
+    </section>
+
+    <script>
+        function salvar() {
+
+            window.location.href = "principal.html";
+
+
+        }
+    </script>

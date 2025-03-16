@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+@import url('http://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('./fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: hwb(232 74% 5%);
+    --cor1: hwb(232 65% 3%);
+    --cor2: hsl(222, 90%, 72%);
+    --cor3: #5f80f7;
+    --cor4: #315df9;
+    --cor5: #062361;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+/* inserir a configuração globaldepois */
+
+body {
+    background-color: white;
+    font-family: var(--fonte-padrao);
+    
+    
+}
+body > h1 {
+    color: rgb(13, 12, 12);
+    font-family: var(--font-destaque);
+    text-align: center;
+    font-size: 3em;
+    padding: 50px 0 10px;
+
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);   
+}
+body > h2 {
+    color: rgb(13, 12, 12);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+}
+body > h3 {
+    color: rgb(13, 12, 12);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    font-size: 18px;
+}
+a.externo::after { /*todo link externo, depois dele inserir um símbolo   */
+    content: '\00A0\1F517';
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5)); /*degrade da cor 3 até cor 5*/
+    min-height: 40px;
+    text-align: center;
+    padding-top: 40px;
+    display: flex;
+
+}
+
+header > h2 {
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
+
+}
+header > h3 {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 14px;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
+}
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.334); /*sombra */
+
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(241, 240, 240);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto; 
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+}
+
+/*pag principal*/
+form input[type=button] {
+    padding: 20px 20px;
+    border: 0;
+    border-radius: 10px;
+    background: #062361;
+    color: white;
+    cursor: pointer;
+   
+}
+
+/*form input[type=submit] {
+
+    font: normal 28pt Arial;
+    background: #062361;
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    align-items: center;
+}*/
+
+.button[type=submit], .button[type=reset] {
+    display: inline-block;
+    width: 30%;
+    padding: 15px 0px;
+    margin: 5px 40px;
+    border: none;
+    border-radius: 10px;
+    background: #062361;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s all; 
+}
+
+.button:hover {
+    background: #1f4efa;
+    transform: scale(1.2);
+}
+
+form label, legend{
+    display: flex;
+    font-size: 16px;
+    margin: 0 0 5px 10px;
+   
+}
+
+.input {
+    display: flex;
+    outline: invert;
+    border-radius: 10px;
+    font-size: 16px;
+    margin:  0 0 20px;
+    padding: 10px;
+    min-width: 400px;
+ 
+   
+}    
+
+.princ{
+    width: 100%;
+    padding: 10px 30px;
+    align-items: center;
+    text-align: center;
+    margin: -15px;
+}
+
+.cam{
+    width: 100%;
+    padding: 10px 30px;
+    align-items: center;
+    text-align: center;
+}
+
+div.areas {
+    font: normal 28pt Arial;
+    background: #062361;
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+div.areae {
+    font: normal 28pt Arial;
+    background: #062361;
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+div.arean {
+    font: normal 28pt Arial;
+    background: #062361;
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+div.areaa {
+    font: normal 28pt Arial;
+    background: #062361;
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+div.areac {
+    font: normal 28pt Arial;
+    background: #062361;
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+div.logo {
+    display: table-cell;
+    float: left;
+    margin-top: -30px;
+}
+
+div.texto {
+    color: white;
+    display: table-cell;
+    float: left;
+    width: 500px;
+    margin-top: -20px;
+    margin-left: 20px;
+
+}
+
+div.botao {
+    font: normal 28pt Arial;
+    background: #062361;
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    align-items: center;
+    
+    
+    
+    
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+@media screen and (max-width:1330px) {
+    section {
+        width: 90%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media  and (max-width: 1064px) {
+    section {
+        width: 100%;
+        height: auto;
+    }
+    
+}
